@@ -18,8 +18,7 @@ $(LIB): $(SCRAPE_DIR)/*.txt
 
 init:
 	python -m venv .venv --system-site-packages
-	source .venv/bin/activate
-	pip install -r requirements.txt
+	./.venv/bin/pip install -r requirements.txt
 
 scrape:
 	mkdir -p $(SCRAPE_DIR)

@@ -17,7 +17,7 @@ $(LIB): $(SCRAPE_DIR)/*.txt
 	tar cjf $(LIB) -C $(ELEM_DIR) siemens
 
 init:
-	python -m venv .venv --system-site-packages
+	python -m venv .venv
 	./.venv/bin/pip install -r requirements.txt
 
 scrape:

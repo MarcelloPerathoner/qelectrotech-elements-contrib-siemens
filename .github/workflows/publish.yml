@@ -19,7 +19,7 @@ jobs:
 
       - name: Setup
         run: |
-          sudo apt-get install -y libegl1
+          sudo apt-get install -y libegl1 libxcb-cursor0
 
       - name: Build
         run: |

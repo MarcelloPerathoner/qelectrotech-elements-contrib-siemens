@@ -17,6 +17,10 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Setup
+        run: |
+          apt-get update && apt-get install libegl1
+
       - name: Build
         run: |
           make init
